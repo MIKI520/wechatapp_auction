@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view>
+  <view>
+  <text>测试1</text>
+  </view>
+  <view>
+  <text>测试1</text>
+  </view>
+  <view>
+  <text>测试1</text>
+  </view>
+  <view>
+  <text>测试1</text>
+  </view>
+  <view>
+  <text>测试1</text>
+  </view>
+</view>
