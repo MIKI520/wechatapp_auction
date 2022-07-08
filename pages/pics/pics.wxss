@@ -1,0 +1,46 @@
+/* pages/pics/pics.wxss */
+.title{
+    font-size: 50rpx;
+    font-weight: 600;
+}
+.sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sub text{
+    font-size: 30rpx;
+    color:#c2c2d6;
+}
+.banner{
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.banner_img{
+    height: 500rpx;
+    width: 90%;
+}
+.nav{
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav .nav_pic{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+}
+.nav .nav_text{
+    width: 50rpx;
+    background-color: #80bfff;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav .nav_text text{
+    padding-left: 10rpx;
+}

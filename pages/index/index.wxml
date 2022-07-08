@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<!-- 首部标题 -->
+<view class="menu_1">
+  <view class="nav">
+    <image src="/static/pic/ai.jpg"></image>
+    <view>精品文章</view>
+  </view>
+  <view class="nav">
+    <image src="/static/pic/ai.jpg"></image>
+    <view>小视频</view>
+  </view>
+  <view class="nav">
+    <image src="/static/pic/ai.jpg"></image>
+    <view>动漫推荐</view>
+  </view>
+    <view class="nav">
+    <image src="/static/pic/ai.jpg"></image>
+    <view>评论</view>
+  </view>
+</view>
+<view class="menu_2">
+    <view class="border">
+        <image class="zd" src="/static/pic/zd.png"></image>
+        <view>动漫推荐</view>
+    </view>
+    <view class="border">
+        <image class="zd" src="/static/pic/zd.png"></image>
+        <view>动漫推荐</view>
+    </view>
+    <view class="border">
+        <image class="zd" src="/static/pic/zd.png"></image>
+        <view>动漫推荐</view>
+    </view>
+    <view class="border">
+        <image class="zd" src="/static/pic/zd.png"></image>
+        <view>动漫推荐</view>
+    </view>
+</view>

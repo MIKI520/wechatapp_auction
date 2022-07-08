@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/pics/pics",
+    "pages/issue/issue",
+    "pages/messages/messages",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#80bfff",
+    "navigationBarTitleText": "动漫画廊",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/static/icon/首页.png",
+      "selectedIconPath": "/static/icon/首页 (1).png"
+
+    },{
+      "pagePath": "pages/pics/pics",
+      "text": "图库",
+      "iconPath": "/static/icon/图库.png",
+      "selectedIconPath": "/static/icon/图库 (1).png"
+    },{
+      "pagePath": "pages/issue/issue",
+      "text": "发布",
+      "iconPath": "/static/icon/发布 (1).png",
+      "selectedIconPath": "/static/icon/发布.png"
+    },{
+      "pagePath": "pages/messages/messages",
+      "text": "消息",
+      "iconPath": "/static/icon/消息-消息.png",
+      "selectedIconPath": "/static/icon/消息-消息 (1).png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",      
+      "iconPath": "/static/icon/我的 (1).png",
+      "selectedIconPath": "/static/icon/我的 (2).png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
