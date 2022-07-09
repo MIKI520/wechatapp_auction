@@ -5,7 +5,10 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    message:'cute tutu',
     userInfo: {},
+    name:'',
+    toux:'/static/icon/user.png',
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
@@ -44,5 +47,31 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },  
+  clickMe:function(event) {
+    // console.log('点我');
+    // console.log(event);
+    // console.log(event.currentTarget.dataset.name);
+    var name = event.currentTarget.dataset.name;
+    wx.navigateTo({
+      url:'/pages/detail/detail?name='+name
+    })
+  },
+  clickText:function(){
+    this.setData({message:'cute yueyue'})
+  },
+  clickGetuser:function(){
+    wx.getUserProfile({
+      desc: '用于完善会员资料',
+      success:(res)=>{
+        console.log('success',res);
+        this.setData({name : res.userInfo.nickName,toux:res.userInfo.avatarUrl});
+      },
+      fail:(res)=>{
+        console.log('fail',res)
+      }
+
+    })
+    // console.log(this.data.name)
   }
 })

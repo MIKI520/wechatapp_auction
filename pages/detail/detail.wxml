@@ -1,0 +1,9 @@
+<!--pages/detail/detail.wxml-->
+<view>
+    <view class="title">
+        <text>FATE图片</text>
+    </view>
+    <view class="img">
+        <image src="/static/pic/0.jpg"></image>
+    </view>
+</view>

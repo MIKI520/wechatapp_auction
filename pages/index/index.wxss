@@ -38,3 +38,9 @@
   width: 48px;
   height: 60px;
 }
+.menu_4{
+  margin-top: 40rpx;
+}
+.menu_4 text{
+  width: 600rpx;
+}

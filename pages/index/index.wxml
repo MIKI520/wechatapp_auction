@@ -1,9 +1,11 @@
 <!--index.wxml-->
 <view class="menu">
-  <view class="item">
-  <image class="img" src="/static/pic/0.jpg"></image>
-  <text>测试1</text>
-  </view>
+  <navigator url="/pages/detail/detail">
+    <view class="item">
+    <image class="img" src="/static/pic/0.jpg"></image>
+    <text>测试1</text>
+    </view>
+  </navigator>
   <view class="item">
   <image class="img" src="/static/pic/0.jpg"></image>
   <text>测试1</text>
@@ -14,7 +16,7 @@
   </view>
   <view class="item">
     <image class="img" src="/static/pic/0.jpg"></image>
-  <text>测试1</text>
+    <text>测试1</text>
   </view>
 </view>
 <!-- index -->
@@ -30,7 +32,7 @@
       111次围观
     </view>
   </view>
-  <view class="banner">
+  <view bindtap="clickMe" data-name="MIKI" data-id = "123" class="banner">
     <image src="/static/pic/0.jpg"></image>
   </view>
 </view>
@@ -40,4 +42,19 @@
   <view><image class="img" src="/static/pic/0.jpg"></image></view>
   <view><image class="img" src="/static/pic/0.jpg"></image></view>
   <view><image class="img" src="/static/pic/0.jpg"></image></view>
+</view>
+<view class="menu_3">
+  <text>数据绑定</text>
+  <text>数据1:{{message}}</text>
+  <button type="primary" plain="true" bindtap="clickText">点击修改数据</button>
+</view>
+<view class="menu_4">
+  <view>
+  <text>当前用户名:{{name}}</text>
+  </view>
+  <view>
+  <text>当前获取头像:</text>
+  <image src="{{toux}}" style="width:100rpx;height:100rpx"></image>
+  </view>
+  <button type="primary" plain="true" bindtap="clickGetuser">点击获取</button>
 </view>

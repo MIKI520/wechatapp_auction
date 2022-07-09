@@ -1,0 +1,11 @@
+/* pages/detail/detail.wxss */
+.img image{
+    height: 1000rpx;
+}
+.title{
+    margin-bottom: 20rpx;
+}
+.title text{
+    font-weight: 600;
+    font-size: 60rpx;
+}

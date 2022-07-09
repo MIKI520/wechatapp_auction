@@ -1,26 +1,29 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F0FFFF",
     "navigationBarTitleText": "葛天昊的测试",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "selectedColor": "#d81e06",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "index",
-      "iconPath": "static/icon/user.png",
-      "selectedIconPath": "static/icon/user_s.png"
-    },
-    {
-      "pagePath": "pages/logs/logs",
-      "text": "logs"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "static/icon/user.png",
+        "selectedIconPath": "static/icon/user_s.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
