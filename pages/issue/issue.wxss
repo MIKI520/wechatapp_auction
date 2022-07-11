@@ -1,1 +1,14 @@
 /* pages/issue/issue.wxss */
+.title_t{
+    font-size: 60rpx;
+    font-weight: 600;
+}
+.main{
+    margin-top: 20rpx;
+}
+.main_t{
+    font-size: 40rpx;
+}
+.main_map_t{
+    font-size: 40rpx;
+}

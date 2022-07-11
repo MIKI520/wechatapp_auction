@@ -4,13 +4,13 @@
         <view class="head">
             <view class="head_icon">
                 <image src="/static/pic/ai.jpg"></image>
-                <text>
-                    登录 | 注册
-                </text>
+                <text>MIKI动漫</text>
             </view>
-            <view class="head_text">
-                <text>查看个人主页</text>
-            </view>            
+            <navigator class="" target="" url="/pages/login/login" hover-class="navigator-hover" open-type="navigate">
+                <view class="head_login">
+                    <text>立刻登录</text>
+                </view> 
+            </navigator>         
         </view>
         <view></view>
         <view></view>

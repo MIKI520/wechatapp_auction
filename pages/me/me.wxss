@@ -4,27 +4,23 @@ body{
     padding: 0px;
 }
 .me_menu_1{
+    height: 170rpx;
     background-color: #80ffaa;
 }
-.me_menu_1 .head .head_icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.me_menu_1 .head .head_icon text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.me_menu_1 .head{
+.me_menu_1 .head{ 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    line-height: 170rpx;
+} 
+.me_menu_1 .head .head_icon{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    
 }
-.me_menu_1 .head .head_text{
-    line-height: 100px;
-    margin-top: 10rpx;
+.me_menu_1 .head .head_icon image{
+    margin-top: -10rpx;
 }
 .me_menu_1 .head image{
     width: 100rpx;
@@ -32,4 +28,8 @@ body{
     border-radius: 50%;
     margin-top: 30rpx;
     margin-right: 30rpx;
+}
+
+.me_menu_1 .head .head_login text{
+    margin-top: -20rpx;
 }

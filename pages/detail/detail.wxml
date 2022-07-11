@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view class="title">
+    <text class="title_t">
+        Fate动漫马上上映
+    </text>
+</view>
+<view class="main">
+    <image class="main_img" src="{{img}}">
+        
+    </image>
+    <textarea class="" value="">
+        22年7月FATE动漫剧场版上映
+    </textarea>
+    <view wx:for="{{data}}">{{item}}</view>
+    <view wx:for="{{goods}}">{{index}} : {{item}}</view>
+</view>

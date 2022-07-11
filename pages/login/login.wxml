@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view>
+    <text>手机号：</text>
+    <input class="" value="" type="text|number|idcard|digit|time|date" >
+        
+    </input>
+</view>

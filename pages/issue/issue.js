@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    image : [],
+    localpath : ''
   },
 
   /**
@@ -62,5 +63,40 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  chooseImg:function(){
+    var that = this
+    wx.chooseMedia({
+      count: 9,
+      mediaType: ['image','video'],
+      sourceType: ['album', 'camera'],
+      maxDuration: 30,
+      camera: 'back',
+      success(res) {
+        var image = []
+        console.log(res.tempFiles)
+        //循环遍历出图片地址
+        res.tempFiles.forEach(item => {
+          image.push(item.tempFilePath)
+        });
+        console.log(image)
+        that.setData({
+          image : image
+        })
+        // console.log(res.tempFiles.tempFilePath)
+        // console.log(res.tempFiles.size)
+      }
+    })
+  },
+  chooseArea:function(){
+    wx.chooseLocation({
+      success:(res)=>{
+        console.log('success',res.name);
+        this.setData({localpath : res.name});
+      },
+      fail:(res)=>{
+        console.log('fail',res);
+      }
+    })
   }
 })

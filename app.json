@@ -4,7 +4,9 @@
     "pages/pics/pics",
     "pages/issue/issue",
     "pages/messages/messages",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/detail/detail",
+    "pages/login/login"
   ],
   "window":{
     "backgroundTextStyle":"light",

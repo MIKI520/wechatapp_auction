@@ -1,0 +1,18 @@
+/* pages/detail/detail.wxss */
+.main{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40rpx;
+}
+.title{
+    margin-top: -80rpx;
+}
+.title_t{
+    font-size: 60rpx;
+    font-weight: 600;
+}
+.main .main_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline
+}

@@ -6,10 +6,12 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
+    id:33,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
+    img: {zd:'/static/pic/zd.png',ai:"/static/pic/ai.jpg"}
   },
   // 事件处理函数
   bindViewTap() {
@@ -43,6 +45,12 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  clicktodetail : function(e){
+    console.log(e.currentTarget.dataset.img)
+    wx.navigateTo({
+      url:'/pages/detail/detail?id='+this.data.id+'&img='+e.currentTarget.dataset.img
     })
   }
 })

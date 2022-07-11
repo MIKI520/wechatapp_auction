@@ -19,12 +19,14 @@
   </view>
 </view>
 <view class="menu_2">
-    <view class="border">
-        <image class="zd" src="/static/pic/zd.png"></image>
-        <view>动漫推荐</view>
-    </view>
-    <view class="border">
-        <image class="zd" src="/static/pic/zd.png"></image>
+    <navigator url='/pages/detail/detail?id={{id}}&img={{img.zd}}'>
+        <view class="border">
+            <image class="zd" src="{{img.zd}}"></image>
+            <view>动漫推荐</view>
+        </view>
+    </navigator>
+    <view class="border" bindtap="clicktodetail" data-img="{{img.ai}}">
+        <image class="zd" src="{{img.ai}}"></image>
         <view>动漫推荐</view>
     </view>
     <view class="border">

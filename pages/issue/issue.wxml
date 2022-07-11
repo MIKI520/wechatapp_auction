@@ -1,2 +1,16 @@
 <!--pages/issue/issue.wxml-->
-<text>pages/issue/issue.wxml</text>
+<view class="title">
+    <text class="title_t">上传动漫新消息</text>
+</view>
+<view class="main">
+  <view class="main_top">
+    <text class='main_t'>上传图片：</text>
+    <button class="mini-btn" type="primary" bindtap="chooseImg" size="mini">选择图片</button>
+    <image wx:for="{{image}}" src="{{item}}"></image>
+  </view>
+  <view class="main_map">
+    <text class="main_map_t">地址定位：</text>
+    <button class="mini-btn" type="primary" bindtap="chooseArea" size="mini">选择地理位置</button>
+    <text>{{localpath}}</text>
+  </view>
+</view>
