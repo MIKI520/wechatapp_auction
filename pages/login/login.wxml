@@ -1,7 +1,14 @@
 <!--pages/login/login.wxml-->
-<view>
+<view class="phone">
     <text>手机号：</text>
-    <input class="" value="" type="text|number|idcard|digit|time|date" >
-        
-    </input>
+    <input class="phone_num" value="{{number}}" bindinput="bindPhone" placeholder="请填写手机号码" maxlength="11" placeholder-class="txt" />
+    <!-- <text>{{number}}</text> -->
 </view>
+<view class="code_t">
+    <text>验证码：</text>
+    <view class="code" bindtap="getCode">获取验证码</view>   
+    <input class="code_num" value="{{code}}" bindinput="bindCode" placeholder="请填写验证码" maxlength="11" placeholder-class="txt">
+    </input>
+    <!-- <text>{{code}}</text> -->
+</view>
+<button class="login" bindtap="login">登录</button>

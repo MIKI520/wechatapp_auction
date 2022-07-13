@@ -1,1 +1,23 @@
 /* pages/login/login.wxss */
+.phone,.code_t{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6rpx;
+}
+.phone_num,.code_num{
+    margin-top: 10rpx;
+    border-bottom: 1px solid #d5d5d5;
+}
+.code{
+    color: aquamarine;
+    border: 1px solid aquamarine;
+    width: 200rpx;
+    text-align: center  ;
+    float:right;
+}
+.code_t{
+    position: relative;
+}
+.login{
+    margin-top: 30rpx;
+}
