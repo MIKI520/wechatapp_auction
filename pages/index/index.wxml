@@ -58,3 +58,7 @@
   </view>
   <button type="primary" plain="true" bindtap="clickGetuser">点击获取</button>
 </view>
+<view class="menu_5">
+  <button type="primary" plain="true" bindtap="clickLocalpath">点击获取地址</button>
+  <text>{{localpath}}</text>
+</view>

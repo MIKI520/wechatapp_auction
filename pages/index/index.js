@@ -8,6 +8,7 @@ Page({
     message:'cute tutu',
     userInfo: {},
     name:'',
+    localpath:'',
     toux:'/static/icon/user.png',
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -73,5 +74,16 @@ Page({
 
     })
     // console.log(this.data.name)
+  },
+  clickLocalpath:function(){
+    wx.chooseLocation({
+      success:(res)=>{
+        console.log('success',res.name);
+        this.setData({localpath : res.name});
+      },
+      fail:(res)=>{
+        console.log('fail',res);
+      }
+    })
   }
 })
